@@ -42,7 +42,7 @@ def test8():
     
 @check50.check(compiles)
 def test8():
-    """handles a height of 14 correctly"""
+    """handles a mystery test case correctly"""
     out = check50.run("./mario").stdin("14").stdout()
     check_pyramid(out, open("14.txt").read())
 
