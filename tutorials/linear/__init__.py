@@ -3,12 +3,12 @@ import check50.c
 
 @check50.check()
 def exists():
-    """affine.c exists."""
+    """linear.c exists."""
     check50.exists("linear.c")
 
 @check50.check(exists)
 def compiles():
-    """affine.c compiles."""
+    """linear.c compiles."""
     check50.c.compile("linear.c", lcs50=True)
 
 @check50.check(compiles)
