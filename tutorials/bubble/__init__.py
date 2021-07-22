@@ -12,12 +12,6 @@ def compiles():
     check50.c.compile("bubble.c", lcs50=True)
 
 @check50.check(compiles)
-def score_50():
-    """returns false for 50"""
-    check50.run("./linear").stdin("50").stdout("Sorry better luck next time!\n").exit(0)
-    
-
-@check50.check(compiles)
-def score_14():
-    """returns true for 14"""
-    check50.run("./linear").stdin("14").stdout("Found your number! Bingo!\n").exit(0)
+def does_it_work():
+    """is it sorted correctly"""
+    check50.run("./bubble").stdout("0 1 2 3 4 5 6 7 8 9\n").exit(0)
