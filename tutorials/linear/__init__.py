@@ -14,7 +14,7 @@ def compiles():
 @check50.check(compiles)
 def score_50():
     """returns false for 50"""
-    check50.run("./linear").stdin("50").stdout("Sorry better luck nex time!\n").exit(0)
+    check50.run("./linear").stdin("50").stdout("Sorry better luck next time!\n").exit(0)
     
 
 @check50.check(compiles)
