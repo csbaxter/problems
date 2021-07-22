@@ -14,4 +14,4 @@ def compiles():
 @check50.check(compiles)
 def does_it_work():
     """is it sorted correctly"""
-    check50.run("./bubble").stdout("0 1 2 3 4 5 6 7 8 9\n").exit(0)
+    check50.run("./bubble").stdout("0 1 2 3 4 5 6 7 8 9 \n").exit(0)
