@@ -13,25 +13,25 @@ def compiles():
 
 @check50.check(compiles)
 def does_it_work20():
-    """does it find the number"""
+    """does it find the number 20"""
     check50.run("./binary").stdin("20").stdout("Found\n").exit(0)
     
 @check50.check(compiles)
 def does_it_work4():
-    """does it find the number"""
+    """does it find the number 4"""
     check50.run("./binary").stdin("4").stdout("Found\n").exit(0)
 
 @check50.check(compiles)
 def does_it_work18():
-    """does it find the number"""
+    """does it find the number 18"""
     check50.run("./binary").stdin("18").stdout("Found\n").exit(0)
     
 @check50.check(compiles)
 def does_it_work99():
-    """does it find the number"""
+    """does it not find the number 99"""
     check50.run("./binary").stdin("99").stdout("Not found!\n").exit(0)
     
 @check50.check(compiles)
 def does_it_work1():
-    """does it find the number"""
+    """does it not find the number 1"""
     check50.run("./binary").stdin("1").stdout("Not found!\n").exit(0)
