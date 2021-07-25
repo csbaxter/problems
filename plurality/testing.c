@@ -33,7 +33,7 @@ int main(int argc, string argv[])
             break;
 
         case 1:
-            printf("%s", vote("Bob") ? "true" : "false");
+            printf("%s", vote("bob") ? "true" : "false");
             break;
 
         case 2:
