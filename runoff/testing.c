@@ -67,13 +67,13 @@ int main(int argc, string argv[])
             candidates[0].name = "Alice";
             candidates[0].votes = 8;
             candidates[0].eliminated = false;
-            candidates[1].name = "bob";
+            candidates[1].name = "Bob";
             candidates[1].votes = 15;
             candidates[1].eliminated = false;
             candidates[2].name = "Charlie";
             candidates[2].votes = 4;
             candidates[2].eliminated = false;
-            candidates[3].name = "DaVid";
+            candidates[3].name = "David";
             candidates[3].votes = 1;
             candidates[3].eliminated = false;
             break;
@@ -83,7 +83,7 @@ int main(int argc, string argv[])
     switch(test)
     {
         case 0:
-            printf("%s", vote(0, 0, "Bob") ? "true" : "false");
+            printf("%s", vote(0, 0, "bob") ? "true" : "false");
             break;
 
         case 1:
@@ -102,7 +102,7 @@ int main(int argc, string argv[])
 
         case 4:
             vote(1, 0, "Bob");
-            vote(1, 1, "Alice");
+            vote(1, 1, "alice");
             vote(1, 2, "Charlie");
             printf("%i %i %i", preferences[1][0], preferences[1][1], preferences[1][2]);
             break;
