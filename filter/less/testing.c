@@ -228,7 +228,7 @@ int main(int argc, char *argv[])
             case 0:
             {
                 upsidedown(3, 3, img2);
-                print_pixel(0, 0, img2);
+                print_pixel(img2[0][0]);
                 break;
             }
         }
