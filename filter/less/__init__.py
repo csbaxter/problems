@@ -29,12 +29,7 @@ SAMPLE_IMAGES = [
 
     # 4
     ["testing with sample 1x3 image",
-    "first row: (255, 0, 0), (0, 255, 0), (0, 0, 255)"],
-    
-    #5
-    ["testing with sample 2x1 image",
-    "first row: (255, 0, 0)",
-    "second row: (0, 255, 255)"]
+    "first row: (255, 0, 0), (0, 255, 0), (0, 0, 255)"]
 ]
 
 def SAMPLE_PIXEL(r, g, b):
@@ -236,7 +231,7 @@ def blur4():
 def upsidedown_row2():
     """upsidedown correctly filters 2x1 image"""
     log(SAMPLE_IMAGES[5])
-    check50.run("./testing 4 0").stdout("".join([
+    check50.run("./testing 5 0").stdout("".join([
         "0 0 255\n", "255 0 0\n"
     ]))
 
