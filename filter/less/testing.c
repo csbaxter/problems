@@ -8,6 +8,7 @@
 #define REFLECT 2
 #define BLUR 3
 #define EDGES 4
+#define UPSIDEDOWN 5
 
 RGBTRIPLE pixel(int r, int g, int b);
 void print_pixel(RGBTRIPLE p);
@@ -219,6 +220,20 @@ int main(int argc, char *argv[])
             }
         }
     }
+    
+    
+    else if (function == UPSIDEDOWN) {
+        switch (test)
+        {
+            case 0:
+            {
+                upsidedown(3, 3, img2);
+                print_pixel(0, 0, img2);
+                break;
+            }
+        }
+    }
+    
 
     else if (function == BLUR) {
         switch (test)
