@@ -229,9 +229,7 @@ def blur4():
     
 @check50.check(compiles)
 def upsidedown_row2():
-    """upsidedown correctly filters 2x1 image"""
+    """upsidedown correctly filters 3x3 image"""
     log(SAMPLE_IMAGES[5])
-    check50.run("./testing 5 0").stdout("".join([
-        "0 0 255\n", "255 0 0\n"
-    ]))
+    check50.run("./testing 5 0").stdout("200 210 220\n")
 
