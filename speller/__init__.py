@@ -15,7 +15,7 @@ def compiles():
     check50.include("speller.c", "Makefile")
     if not os.path.exists("dictionary.h"):
         check50.include("dictionary.h")
-    check50.run("make").exit(2)
+    check50.run("make").exit(0)
 
 
 @check50.check(compiles)
