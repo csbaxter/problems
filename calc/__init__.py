@@ -41,4 +41,10 @@ def problem_5():
     """% 2 2"""
     check50.run("./calc % 2 2").stdout("0.000000").exit(0)
 
+@check50.check(compiles)
+def problem_6():
+    """x - 3.4 5.6 7.9"""
+    check50.run("./calc x - 3.4 5.6 7.9").stdout("-17.3799999").exit(0)
+    
+
  
