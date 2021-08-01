@@ -1,1 +1,13 @@
+check50:
+  files: &check50_files
+    - !exclude "*"
+    - !require countdown.c
+    - !require fibo.c
+    - !require garbage.c
+    - !require initializations.c
+    - !require mean.c
+    - !require minesweeper.c
+    - !require pokemon.c
 
+submit50:
+  files: *check50_files
